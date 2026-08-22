@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BitX Labs — Engineering High-Scale Software & Custom Web Apps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+<div class="nodes" id="nodes"></div>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#00d2ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 4 L3 12 L8 20"/>
+          <path d="M16 4 L21 12 L16 20"/>
+        </svg>
+      </span>
+      BitX Labs
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#stack">Tech Stack</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> Custom Software Engineering Studio</span>
+        <h1>Engineering High-Scale <span class="grad">Software &amp; Custom Web Apps.</span></h1>
+        <p class="subhead">We transform complex technical challenges into fast, reliable, and scalable digital products for modern businesses.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">Start Your Project →</a>
+          <a href="#services" class="btn btn-ghost btn-lg">Explore Our Work</a>
+        </div>
+        <div class="hero-meta">
+          <div><div class="num">40+</div><div class="label">PRODUCTS SHIPPED</div></div>
+          <div><div class="num">99.98%</div><div class="label">AVG. UPTIME</div></div>
+          <div><div class="num">12</div><div class="label">INDUSTRIES SERVED</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mockup">
+          <div class="mockup-bar">
+            <span></span><span></span><span></span>
+            <div class="tab">architecture.ts</div>
+          </div>
+          <div class="mockup-body">
+            <div class="ln"><span class="lno">1</span><span><span class="c-kw">import</span> { <span class="c-fn">deploy</span> } <span class="c-kw">from</span> <span class="c-str">'@bitx/core'</span>;</span></div>
+            <div class="ln"><span class="lno">2</span><span></span></div>
+            <div class="ln"><span class="lno">3</span><span><span class="c-kw">interface</span> <span class="c-type">SystemConfig</span> {</span></div>
+            <div class="ln"><span class="lno">4</span><span>&nbsp;&nbsp;<span class="c-var">scale</span>: <span class="c-type">"auto"</span> | <span class="c-type">"manual"</span>;</span></div>
+            <div class="ln"><span class="lno">5</span><span>&nbsp;&nbsp;<span class="c-var">latency</span>: <span class="c-type">number</span>;</span></div>
+            <div class="ln"><span class="lno">6</span><span>}</span></div>
+            <div class="ln"><span class="lno">7</span><span></span></div>
+            <div class="ln"><span class="lno">8</span><span><span class="c-com">// provision infra & ship</span></span></div>
+            <div class="ln"><span class="lno">9</span><span><span class="c-kw">const</span> <span class="c-var">system</span> = <span class="c-kw">await</span> <span class="c-fn">deploy</span>({</span></div>
+            <div class="ln"><span class="lno">10</span><span>&nbsp;&nbsp;<span class="c-var">scale</span>: <span class="c-str">"auto"</span>,</span></div>
+            <div class="ln"><span class="lno">11</span><span>&nbsp;&nbsp;<span class="c-var">latency</span>: <span class="c-var">12</span></span></div>
+            <div class="ln"><span class="lno">12</span><span>});<span class="cursor-blink"></span></span></div>
+          </div>
+          <div class="mockup-footer">
+            <span class="status-ok">Build passed</span>
+            <span>Node 20 · TypeScript 5.4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">Core Services</span>
+        <h2>Full-stack engineering, end to end.</h2>
+        <p class="section-sub">From first architecture diagram to production infrastructure, we own the technical build so your team can focus on the business.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3 3 8l5 5M16 3l5 5-5 5M14 3l-4 18"/></svg>
+          </div>
+          <h3>Custom Software Engineering</h3>
+          <p>Bespoke systems built around your workflows, not the other way around — from internal tools to core product infrastructure.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+          </div>
+          <h3>Scalable Web & SaaS Platforms</h3>
+          <p>Multi-tenant architectures engineered to hold up under real growth, from first users to millions of requests a day.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+          </div>
+          <h3>Mobile Application Development</h3>
+          <p>Native-feel iOS and Android apps sharing a single, well-tested codebase — built for speed and long-term maintainability.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6-1.5A4 4 0 0 0 6.5 16"/><path d="M12 12v7M9 16l3 3 3-3"/></svg>
+          </div>
+          <h3>Cloud & API Architecture</h3>
+          <p>Resilient cloud infrastructure and clean API contracts that keep every part of your system talking to each other reliably.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">The Process</span>
+        <h2>A build process built to de-risk yours.</h2>
+        <p class="section-sub">Four disciplined phases — the same order, every project — so nothing gets skipped between idea and production.</p>
+      </div>
+
+      <div class="process-row">
+        <div class="process-line"></div>
+
+        <div class="step">
+          <div class="step-index">01</div>
+          <h3>Discovery & Architecture</h3>
+          <p>We map requirements, constraints, and system design before a single line of code is written.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-index">02</div>
+          <h3>Agile Development</h3>
+          <p>Short, transparent sprints with working software delivered on a predictable, reviewable cadence.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-index">03</div>
+          <h3>Testing & Deployment</h3>
+          <p>Automated test coverage and staged rollouts so what ships to production is already proven.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-index">04</div>
+          <h3>Maintenance & Scale</h3>
+          <p>Ongoing monitoring, performance tuning, and roadmap support as real-world usage grows.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div class="cta-inner">
+          <div>
+            <h2>Ready to build your next digital product?</h2>
+            <p class="section-sub">Tell us what you're building. We'll reply within one business day with next steps and a rough scope.</p>
+          </div>
+          <div class="cta-form">
+            <div class="form-row">
+              <input type="text" placeholder="Full name" />
+              <input type="email" placeholder="Work email" />
+            </div>
+            <textarea placeholder="What are you looking to build?"></textarea>
+            <button type="button" class="btn btn-primary">Send Project Brief</button>
+            <p class="cta-alt">or reach us directly on <a href="https://wa.me/8801540185272" target="_blank" rel="noopener">WhatsApp →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00d2ff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 4 L3 12 L8 20"/>
+              <path d="M16 4 L21 12 L16 20"/>
+            </svg>
+          </span>
+          BitX Labs
+        </div>
+        <p>A custom software engineering studio building high-scale products for ambitious teams.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Studio</h4>
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#about">About</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="https://wa.me/8801540185272" target="_blank" rel="noopener">WhatsApp: 01540185272</a>
+          <a href="mailto:hello@bitxlabs.com">hello@bitxlabs.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 BitX Labs. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="9" width="4" height="12"/><circle cx="5" cy="4.5" r="1.5"/><path d="M11 21v-7a3 3 0 0 1 6 0v7M13 12v9"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+        <a href="https://wa.me/8801540185272" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12a8 8 0 1 1-3.6-6.7M20 12l-1-4-4 1"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
