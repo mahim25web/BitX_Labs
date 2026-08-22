@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<canvas id="canvas3d"></canvas>
 <div class="bg-grid"></div>
 <div class="bg-glow"></div>
 <div class="nodes" id="nodes"></div>
@@ -28,9 +28,9 @@
     </div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
+      <li><a href="#architecture">Architecture</a></li>
       <li><a href="#stack">Tech Stack</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
     </ul>
     <div class="nav-cta">
       <a href="#contact" class="btn btn-primary">Get in Touch</a>
@@ -48,7 +48,7 @@
         <p class="subhead">We transform complex technical challenges into fast, reliable, and scalable digital products for modern businesses.</p>
         <div class="hero-ctas">
           <a href="#contact" class="btn btn-primary btn-lg">Start Your Project →</a>
-          <a href="#services" class="btn btn-ghost btn-lg">Explore Our Work</a>
+          <a href="#architecture" class="btn btn-ghost btn-lg">Explore Architecture</a>
         </div>
         <div class="hero-meta">
           <div><div class="num">40+</div><div class="label">PRODUCTS SHIPPED</div></div>
@@ -136,6 +136,98 @@
 
   <div class="wrap"><div class="divider"></div></div>
 
+  <!-- NEW: ARCHITECTURE & SYSTEM DESIGN (TECH-HEAVY) -->
+  <section id="architecture">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">System Design</span>
+        <h2>Engineered for extreme performance & reliability.</h2>
+        <p class="section-sub">We design fault-tolerant system blueprints tailored to handle spikes in traffic without latency degradation.</p>
+      </div>
+      
+      <div class="arch-visual-container">
+        <div class="arch-node">
+          <span class="node-type">Edge / CDN</span>
+          <h4>Cloudflare Enterprise</h4>
+          <span class="node-meta">&lt;10ms Global Latency</span>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node active-node">
+          <span class="node-type">API Gateway</span>
+          <h4>Go / Node.js Cluster</h4>
+          <span class="node-meta">Auto-scaling Pods</span>
+        </div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-node">
+          <span class="node-type">Data & Cache</span>
+          <h4>PostgreSQL + Redis</h4>
+          <span class="node-meta">Sub-millisecond Reads</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
+  <!-- NEW: TECH STACK & BENCHMARKS -->
+  <section id="stack">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-tag">Tech Stack</span>
+        <h2>Modern tools. Uncompromised benchmarks.</h2>
+        <p class="section-sub">We select frameworks and databases based on throughput, developer velocity, and operational stability.</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-card">
+          <div class="stack-header">
+            <h4>Frontend & Mobile</h4>
+            <span class="badge">Performance</span>
+          </div>
+          <p class="stack-items">React, Next.js, TypeScript, Tailwind, React Native, Flutter</p>
+          <div class="benchmark">
+            <span>Sub-100ms First Contentful Paint</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-header">
+            <h4>Backend & Systems</h4>
+            <span class="badge">High Throughput</span>
+          </div>
+          <p class="stack-items">Node.js, Go, Python (FastAPI), NestJS, GraphQL, REST</p>
+          <div class="benchmark">
+            <span>10k+ Req/sec per instance</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-header">
+            <h4>Cloud & Infrastructure</h4>
+            <span class="badge">99.99% Availability</span>
+          </div>
+          <p class="stack-items">AWS, GCP, Docker, Kubernetes, Terraform, CI/CD Pipelines</p>
+          <div class="benchmark">
+            <span>Zero-Downtime Deployments</span>
+          </div>
+        </div>
+
+        <div class="stack-card">
+          <div class="stack-header">
+            <h4>Databases & Caching</h4>
+            <span class="badge">Low Latency</span>
+          </div>
+          <p class="stack-items">PostgreSQL, MongoDB, Redis, ElasticSearch, DynamoDB</p>
+          <div class="benchmark">
+            <span>ACID Compliant + Microsecond Cache</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="divider"></div></div>
+
   <!-- PROCESS -->
   <section id="process">
     <div class="wrap">
@@ -176,27 +268,28 @@
   </section>
 
   <!-- CTA BANNER -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="cta-banner">
-        <div class="cta-inner">
-          <div>
-            <h2>Ready to build your next digital product?</h2>
-            <p class="section-sub">Tell us what you're building. We'll reply within one business day with next steps and a rough scope.</p>
-          </div>
-          <div class="cta-form">
-            <div class="form-row">
-              <input type="text" placeholder="Full name" />
-              <input type="email" placeholder="Work email" />
-            </div>
-            <textarea placeholder="What are you looking to build?"></textarea>
-            <button type="button" class="btn btn-primary">Send Project Brief</button>
-            <p class="cta-alt">or reach us directly on <a href="https://wa.me/8801540185272" target="_blank" rel="noopener">WhatsApp →</a></p>
-          </div>
+  <!-- CTA BANNER -->
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-banner">
+      <div class="cta-inner">
+        <div>
+          <h2>Ready to build your next digital product?</h2>
+          <p class="section-sub">Tell us what you're building. We'll reply within one business day with next steps and a rough scope.</p>
         </div>
+        <form class="cta-form">
+          <div class="form-row">
+            <input type="text" name="from_name" placeholder="Full name" required />
+            <input type="email" name="from_email" placeholder="Work email" required />
+          </div>
+          <textarea name="message" placeholder="What are you looking to build?" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Project Brief</button>
+          <p class="cta-alt">or reach us directly on <a href="https://wa.me/8801540185272" target="_blank" rel="noopener">WhatsApp →</a></p>
+        </form>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 </main>
 
 <footer>
@@ -218,8 +311,9 @@
         <div class="footer-col">
           <h4>Studio</h4>
           <a href="#services">Services</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#stack">Tech Stack</a>
           <a href="#process">Process</a>
-          <a href="#about">About</a>
         </div>
         <div class="footer-col">
           <h4>Contact</h4>
@@ -238,8 +332,10 @@
     </div>
   </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script src="script.js"></script>
-
+<!-- Three.js Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </body>
 </html>
